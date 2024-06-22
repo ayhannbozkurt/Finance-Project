@@ -1,2 +1,12 @@
 matplotlib
 yfinance
+statsmodels
+pandas
+streamlit
+numpy
+requests
+beautifulsoup4
+deep-translator
+transformers
+openai
+python-dotenv
