@@ -10,3 +10,4 @@ deep-translator
 transformers
 openai
 python-dotenv
+torch
