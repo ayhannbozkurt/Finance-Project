@@ -1,14 +1,17 @@
+import os
 from openai import OpenAI
 import streamlit as st
 import matplotlib.pyplot as plt
 from utils import get_stock_data, stocks
-import os
 from dotenv import load_dotenv
 
+# .env dosyasını yükle
 load_dotenv()
 
-api_key = os.getenv('api_key')
+# API anahtarını alın
+api_key = os.getenv('OPENAI_API_KEY')
 
+# OpenAI API anahtarınızı buraya ekleyin
 client = OpenAI(api_key=api_key)
 
 def show_reporting():

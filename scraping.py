@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from deep_translator import GoogleTranslator
 from transformers import pipeline
-from app import api_key
 
 def get_news():
    
