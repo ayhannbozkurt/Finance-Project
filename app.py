@@ -31,17 +31,4 @@ elif menu == "Raporlama":
     show_reporting()
 
 elif menu == "Sentiment Analysis":
-    df = get_news()
-    st.write("Finansal Haberler ve Duygu Analizi")
-    
-    # Tabloyu tam genişlikte göstermek için streamlit style kullanımı
-    st.markdown("""
-        <style>
-        .reportview-container .main .block-container{
-            padding: 0;
-        }
-        </style>
-        """, unsafe_allow_html=True)
-    
-    # DataFrame'i tam genişlikte göster
-    st.dataframe(df.style.applymap(color_label, subset=['Label']), width=1500, height=800)
+    get_news()
